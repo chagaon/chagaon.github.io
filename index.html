@@ -1,58 +1,11 @@
-
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CHA GAON — Creative Playground</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: #101014;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
-    main {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 10%;
-    }
-    .label { color: #a5a5b2; letter-spacing: 3px; }
-    h1 {
-      font-size: clamp(48px, 9vw, 110px);
-      letter-spacing: -4px;
-      margin: 20px 0;
-    }
-    p { color: #a5a5b2; font-size: 18px; line-height: 1.8; }
-    button {
-      background: white;
-      color: black;
-      border: 0;
-      border-radius: 50px;
-      padding: 16px 28px;
-      margin-top: 30px;
-      cursor: pointer;
-    }
-    button:hover { background: #c5b6ff; }
-  </style>
-</head>
-<body>
-  <main>
-    <div class="label">WELCOME TO MY PLAYGROUND</div>
-    <h1>Hi, I'm Gaon.</h1>
-    <p>
-      I make things. I explore ideas.<br>
-      Sometimes they work. Sometimes they don't.<br>
-      That's part of the fun.
-    </p>
-    <div>
-      <button onclick="alert('The journey begins!')">
-        Let's Explore ↗
-      </button>
-    </div>
-  </main>
-</body>
-</html>
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f1f0ea"><meta name="description" content="GAON LAB — 궁금한 것을 관찰하고, 직접 만들고, 다시 고치는 인터랙티브 실험 아카이브. 첫 번째 실험: 달항아리."><meta property="og:title" content="GAON LAB — Curiosity into Experiments"><meta property="og:description" content="관찰에서 실험까지. 직접 만져볼 수 있는 작은 프로젝트를 모읍니다."><meta property="og:type" content="website"><title>GAON LAB — Curiosity into Experiments</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600&display=swap');
+:root{color-scheme:light;--bg:#f1f0ea;--ink:#272b27;--muted:#656b62;--line:#d4d5c9;--olive:#737766;--dark:#1a1f1d;--gold:#c4af8e}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans','Apple SD Gothic Neo',Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible{outline:2px solid #917457;outline-offset:5px}.layout{max-width:1460px;margin:auto;padding:0 clamp(22px,5.2vw,78px)}.nav{height:95px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.logo{font-size:18px;font-weight:700;letter-spacing:.08em}.logo span{margin-left:9px;font-size:10px;font-weight:500;letter-spacing:.16em;color:var(--olive)}.menu{display:flex;gap:clamp(18px,3vw,44px);font-size:11px;letter-spacing:.16em;font-weight:600}.menu a{transition:opacity .2s}.menu a:hover{opacity:.55}.hero{padding:94px 0 80px;display:grid;grid-template-columns:1.4fr 1fr;gap:55px;align-items:end;min-height:450px}.eyebrow{font-size:11px;letter-spacing:.19em;font-weight:600;color:var(--olive)}h1{font-family:'Noto Serif KR',Georgia,serif;font-weight:400;letter-spacing:-.09em;font-size:clamp(51px,7vw,102px);line-height:1.2;margin:25px 0 22px;word-break:keep-all}.hero-copy{max-width:390px;line-height:2;color:#586058;font-size:15px;word-break:keep-all;align-self:end;padding:0 0 22px}.hero-copy strong{display:block;color:#343b34;font-weight:500;margin-bottom:13px}.section-top{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:28px 0 20px;border-top:1px solid var(--line)}.section-top h2{font-size:15px;font-weight:600;letter-spacing:.04em;margin:0}.section-top .aside{font-size:10px;letter-spacing:.14em;color:#777e73}.feature{display:grid;grid-template-columns:1.15fr 1fr;min-height:530px;background:var(--dark);color:#eceae1;overflow:hidden;border-radius:3px}.feature-visual{position:relative;display:flex;align-items:center;justify-content:center;min-height:530px;overflow:hidden;background:radial-gradient(ellipse at 53% 48%,#323a34 0,#242b27 37%,#1a1f1d 70%)}.feature-visual img{display:block;position:absolute;height:100%;max-height:580px;width:100%;object-fit:contain;mix-blend-mode:screen;transform:scale(.93);transition:transform .6s}.feature:hover .feature-visual img{transform:scale(.99)}.feature-visual::after{position:absolute;content:'';inset:0;background:linear-gradient(to right,transparent 72%,#1a1f1d);pointer-events:none}.feature-label{position:absolute;top:35px;left:38px;color:#c1c8b8;z-index:1;font-size:10px;letter-spacing:.19em}.feature-info{display:flex;flex-direction:column;justify-content:space-between;padding:55px clamp(25px,5vw,80px) 52px clamp(30px,4vw,55px)}.feature-index{color:#bdb5a3;font-size:11px;letter-spacing:.18em}.feature-info h3{font-family:'Noto Serif KR',Georgia,serif;font-size:clamp(37px,4vw,62px);font-weight:400;letter-spacing:-.08em;margin:25px 0 6px}.feature-en{color:#c5c0b1;letter-spacing:.22em;font-size:13px;margin:0 0 35px}.feature-info p{color:#b5beb3;max-width:380px;line-height:1.9;font-size:14px;word-break:keep-all}.tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:28px}.tag{font-size:10px;color:#cbd0c6;border:1px solid #5a625a;border-radius:100px;padding:8px 12px;letter-spacing:.06em}.cta{display:inline-flex;justify-content:space-between;align-items:center;margin-top:45px;min-width:198px;padding:16px 0;border-top:1px solid #7e847a;border-bottom:1px solid #7e847a;font-size:12px;letter-spacing:.12em;font-weight:600;transition:padding .2s}.cta:hover{padding-left:9px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.small-card{border:1px solid var(--line);background:#eeede6;min-height:250px;padding:28px;display:flex;flex-direction:column;justify-content:space-between}.small-card .index{font-size:11px;color:#7c8376;letter-spacing:.12em}.small-card h3{font-family:'Noto Serif KR',Georgia,serif;font-size:25px;font-weight:400;letter-spacing:-.045em;margin:13px 0}.small-card p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}.small-card .state{font-size:10px;letter-spacing:.13em;color:#868c7f}.small-card.clickable{transition:transform .2s,border-color .2s}.small-card.clickable:hover{transform:translateY(-4px);border-color:#979d8f}.about{margin:105px 0 110px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}.about h2{font-family:'Noto Serif KR',Georgia,serif;font-size:clamp(32px,4.5vw,57px);letter-spacing:-.07em;font-weight:400;line-height:1.45;margin:13px 0}.about p{line-height:2.08;font-size:14px;color:#5e675f;max-width:530px;word-break:keep-all}.about a{display:inline-block;border-bottom:1px solid #797e71;padding-bottom:7px;font-size:12px;margin-top:10px}.footer{padding:26px 0 48px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px;font-size:11px;color:#70786c}.footer b{color:#3c443b}.footer a:hover{text-decoration:underline}
+@media(max-width:840px){.nav{height:76px}.logo{font-size:16px}.logo span{display:none}.menu{gap:16px;font-size:10px}.hero{padding:65px 0;min-height:auto;grid-template-columns:1fr;gap:4px}.hero-copy{padding:0;max-width:560px}.feature{grid-template-columns:1fr}.feature-visual{min-height:390px}.feature-visual img{max-height:460px}.feature-visual:after{background:linear-gradient(to bottom,transparent 80%,#1a1f1d)}.feature-info{padding:20px 35px 38px}.feature-info h3{margin-top:18px}.cta{margin-top:28px}.grid{grid-template-columns:1fr}.small-card{min-height:175px}.about{grid-template-columns:1fr;gap:5px;margin:75px 0}}@media(max-width:460px){.layout{padding:0 21px}.nav{height:68px}.menu{gap:12px}.menu a{letter-spacing:0}.hero{padding:51px 0 54px}h1{font-size:48px;margin:17px 0}.hero-copy{font-size:13px}.feature-visual{min-height:340px}.feature-info h3{font-size:39px}.feature-info{padding:18px 25px 32px}.feature-info p{font-size:13px}.section-top .aside{display:none}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body><div class="layout"><header class="nav"><a class="logo" href="./index.html" aria-label="GAON LAB 홈">GAON LAB <span>INDEPENDENT EXPERIMENTS</span></a><nav class="menu" aria-label="메인 메뉴"><a href="#projects">PROJECTS</a><a href="#notes">NOTES</a><a href="#about">ABOUT</a></nav></header>
+<main><section class="hero"><div><div class="eyebrow">A PERSONAL SPACE FOR CURIOSITY / 2026</div><h1>궁금한 것을<br>직접 만들어 봅니다.</h1></div><div class="hero-copy"><strong>Curiosity into Experiments.</strong>관심에서 출발한 질문을 조사하고, 직접 움직이는 결과물로 만들어 봅니다. 아직 완벽하지 않아도 일단 만들고, 발견한 것을 기록합니다.</div></section>
+<section id="projects"><div class="section-top"><h2>Selected Experiments</h2><span class="aside">01 LIVE PROJECT / MORE TO COME</span></div><article class="feature"><a class="feature-visual" href="./projects/moon-jar/" aria-label="달항아리 3D 실험 열기"><div class="feature-label">EXP. 001 · INTERACTIVE OBJECT</div><img src="./assets/moon-jar-cover.webp" alt="회전할 수 있는 달항아리 웹앱 화면 캡처" fetchpriority="high"></a><div class="feature-info"><div><div class="feature-index">001 / CULTURE & INTERACTION</div><h3>달항아리</h3><div class="feature-en">MOON JAR — AN OBJECT, MANY STORIES</div><p>하나의 사물이 어떻게 오늘날의 문화적 상징이 되었을까? 달항아리를 직접 회전시키고, 형태와 이름 그리고 해석에 관한 질문을 탐색하는 첫 번째 실험입니다.</p><div class="tags"><span class="tag">3D WEBGL</span><span class="tag">CULTURAL EXPLORATION</span><span class="tag">V0.1</span></div></div><a class="cta" href="./projects/moon-jar/">EXPLORE PROJECT <span aria-hidden="true">↗</span></a></div></article></section>
+<section id="notes" style="margin-top:85px"><div class="section-top"><h2>Notes & Next Experiments</h2><span class="aside">WORK IN PROGRESS</span></div><div class="grid"><a class="small-card clickable" href="./notes/moon-jar-research.html"><div><div class="index">NOTE / 001 · RESEARCH</div><h3>세 개의 달항아리</h3><p>국립중앙박물관·영국박물관·크리스티. 실제 작품의 출처와 크기를 비교하며 다음 버전을 준비합니다.</p></div><div class="state">READ RESEARCH NOTE ↗</div></a><div class="small-card"><div><div class="index">EXP / 002 · IDEA</div><h3>K-Food Booth</h3><p>한식 부스에서 했던 선택을 작은 경영 시뮬레이션으로 만들면 어떨까?</p></div><div class="state">NOT BUILT YET</div></div><div class="small-card"><div><div class="index">EXP / 003 · IDEA</div><h3>Movie Choice Helper</h3><p>오늘 볼 영화 하나를 고르는 일을 조금 더 재미있게 만들어보는 실험.</p></div><div class="state">NOT BUILT YET</div></div></div></section>
+<section class="about" id="about"><div><div class="eyebrow">ABOUT THIS SPACE</div><h2>관찰하고, 묻고,<br>직접 확인하기.</h2></div><div><p>역사와 문화를 공부하면서 어떤 사물이 사람들에게 의미를 얻는 과정에 관심을 가졌습니다. 지금은 그 관심을 화면 위에서 직접 탐험할 수 있는 경험으로도 바꿔보고 있어요.</p><p>이곳은 거창한 완성품만 전시하는 장소가 아닙니다. 아이디어가 처음 작동하던 순간, 예상과 다른 결과, 다음에 고치고 싶은 부분까지 차곡차곡 쌓아두는 작업실입니다.</p><a href="./notes/moon-jar-research.html">첫 번째 리서치 노트 읽기 ↗</a></div></section></main><footer class="footer"><div><b>GAON LAB</b> · BUILT TO LEARN</div><div>EXP. 001 / MOON JAR · 2026</div><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">BACK TO TOP ↑</a></footer></div></body></html>
