@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHA GAON — Creative Playground</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #101014;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    main {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10%;
+    }
+    .label { color: #a5a5b2; letter-spacing: 3px; }
+    h1 {
+      font-size: clamp(48px, 9vw, 110px);
+      letter-spacing: -4px;
+      margin: 20px 0;
+    }
+    p { color: #a5a5b2; font-size: 18px; line-height: 1.8; }
+    button {
+      background: white;
+      color: black;
+      border: 0;
+      border-radius: 50px;
+      padding: 16px 28px;
+      margin-top: 30px;
+      cursor: pointer;
+    }
+    button:hover { background: #c5b6ff; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="label">WELCOME TO MY PLAYGROUND</div>
+    <h1>Hi, I'm Gaon.</h1>
+    <p>
+      I make things. I explore ideas.<br>
+      Sometimes they work. Sometimes they don't.<br>
+      That's part of the fun.
+    </p>
+    <div>
+      <button onclick="alert('The journey begins!')">
+        Let's Explore ↗
+      </button>
+    </div>
+  </main>
+</body>
+</html>
